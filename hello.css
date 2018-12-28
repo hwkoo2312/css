@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+body{
+    color: black;
+}
+
+.clicked{
+    color: #7f8c8d;
+}
+
+.form{
+    display: none;
+}
+
+.showing{
+    display: block;
+}

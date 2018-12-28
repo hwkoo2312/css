@@ -1,0 +1,86 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello javascript</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="hello.css" />
+    <script src="jquery.js"></script>
+
+    <script>
+    console.log('Im working. Im JS. Im Beautiful. Im worth it');
+
+    var sample = {
+        'hello' : 'afternoon',
+        'good' : ['hello world']
+    };
+
+    var kooInfo ={
+        'name' : 'koohyunwook',
+        'age' : '26',
+        'home' : 'Seoul',
+        'favMovies' : ['Along the gods', 'emperror of rings'],
+        'favFood' : [
+            {name: "Kimchi", fatty: false}, 
+            {name: "Cheese burger", fatty: true}
+        ]
+    };
+
+    var calculator ={
+        'plus' : function(first, second){
+            return first + second;
+        },
+        'devise' : function(first, second){
+            return first - second;
+        }
+    }
+
+    function sayHello(name, age){
+        return `Hello ${name} you are ${age} years old`;
+    }
+    </script>
+</head>
+<body>
+    <h1>This Works!</h1>
+    <h1>
+    <script>
+        document.write(sample.hello + '<br>') ;
+        const dayOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+        console.log(dayOfWeek);
+        console.log(dayOfWeek[3]);
+        console.log(kooInfo);
+        console.log(console);
+        for(var key in kooInfo){
+            document.write(this.key + '<br>');
+        }
+
+        const greetKoo = document.write(sayHello('Nicolas',15) + '<br>');
+        const plus = document.write(calculator.plus(3,50) + '<br>');
+        plus = document.write(calculator.devise(50,3));
+        
+    </script>
+    </h1>
+
+    <script>
+        const good = 'hello world';
+        document.write(good + '<br>');
+        document.write(sample.good);
+    </script>
+
+    <ui id="list">
+            <li>empty</li>
+            <li>empty</li>
+            <li>empty</li>
+            <li>empty</li>
+            <br>
+    </ui>
+
+    <input type='button' value="push" id="textChange" />
+
+
+    <script type="text/javascript">
+        $('#textChange').click(function(){
+            $('#list li').text('good bye');
+        })
+    </script>
+</body>
+</html>

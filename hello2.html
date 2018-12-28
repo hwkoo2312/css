@@ -1,0 +1,57 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="hello.css" />
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="title">This works!</h1>
+    <h2 class="simple">LOL</h2>
+    <script>
+        const title=document.getElementById("title");
+        title.innerHTML = "Hi! From JS";
+        title.style.color = 'blue';
+        console.dir(title);
+        
+        const simple=document.getElementsByClassName("simple");
+        //simple.style.color= 'yellow';
+        document.title = "i own you now"
+
+        const BASE_COLOR = "rgb(52, 73, 94)";
+        const OTHER_COLOR = "#7f8c8d"
+
+
+        function handleClick(event){
+            const currentColor = title.style.color;
+            if(currentColor === BASE_COLOR){
+                title.style.color = OTHER_COLOR;
+            }
+            else{
+                title.style.color = BASE_COLOR;
+            }
+        }
+
+        function handleLeave(event){
+            const currentColor = title.style.color;
+            if(currentColor === BASE_COLOR){
+                title.style.color = OTHER_COLOR;
+            }
+            else{
+                title.style.color = BASE_COLOR;
+            }
+        }
+
+        function init(){
+            title.style.color = BASE_COLOR
+            title.addEventListener("mouseenter", handleClick);
+            title.addEventListener("mouseleave", handleLeave);
+        }
+        init();
+
+        
+        
+    </script>
+</body>
+</html>
